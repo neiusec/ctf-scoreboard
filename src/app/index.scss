@@ -4,6 +4,7 @@
  */
 $navbar-inverse-link-color: #5AADBB;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$yellow: #E9A825;
 
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
@@ -12,6 +13,17 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // bower:scss
 // endbower
 
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 100px 50px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -19,11 +31,53 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
   padding: 0.2em 0;
 }
 
-.thumbnail {
-  height: 200px;
+.full {
+  background: url("/assets/images/binary-stream-still.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-  img.pull-right {
-    width: 50px;
+.container .jumbotron, .container-fluid .jumbotron {
+  border-radius: 0;
+}
+
+.neiusec-logo-thumbnail {
+  height: 100px;
+  width: auto;
+}
+
+.homepage {
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0.75);
+  padding-left: 50px;
+  padding-right: 50px;
+  min-height: 700px;
+}
+
+.homepage-content p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+#footer {
+  background: rgba(0,0,0,0.6);
+  box-shadow: 0 0 10px 50px rgba(0,0,0,0.6);
+  border: none;
+}
+
+.copyright {
+  color: $yellow;
+}
+
+@media (max-width: 768px) {
+  .body {
+    margin: 100px 20px;
+  }
+  .homepage {
+    padding: 0;
+    margin: 0;
   }
 }
 

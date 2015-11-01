@@ -1,3 +1,22 @@
 .acme-navbar-text{
   color: white;
 }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: $yellow;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: white;
+}
+
+.neiusec-logo {
+  text-align: center;
+  height: 30px;
+  width: auto;
+  margin-top: -5px;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
