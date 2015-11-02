@@ -5,6 +5,9 @@
 $navbar-inverse-link-color: #5AADBB;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 $yellow: #E9A825;
+$blue: #02E2FC;
+$dblue: #0E0E23;
+$green: #00D343;
 
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
@@ -22,6 +25,22 @@ body {
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0.4);
   color: white;
+}
+
+.btn-warning {
+  background-color: $yellow;
+}
+
+.btn-warning:hover {
+  background-color: $yellow - #222;
+}
+
+.btn-success {
+  background-color: $green;
+}
+
+.btn-success:hover {
+  background-color: $green - #222;
 }
 
 .browsehappy {
@@ -60,6 +79,57 @@ body {
   font-size: 1rem;
   line-height: 1.4rem;
 }
+
+// CTF STYLES
+
+.category-btn {
+  font-size: 1.2rem;
+  color: black !important;
+}
+.ctf-flags {
+  background: rgba(0, 0, 0, 0.9);
+  min-height: 600px;
+}
+
+.flag-box {
+  text-align: left;
+  background: #222222;
+  padding: 20px 10px;
+  border: 2px solid $yellow;
+}
+.flag-description {
+  text-align: justify;
+  font-size: 1rem;
+  padding: 20px 20px 20px 0;
+}
+.flag-box .stats {
+  min-height: 220px;
+  border: 2px solid $yellow;
+}
+.flag-box .stats h2 {
+  text-align: center;
+}
+
+.ctf-categories {
+  display: flex;
+  margin-top: 20px;
+  align-content: space-around;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.ctf-categories > li {
+  display: flex;
+  font-size:1.2rem;
+  cursor: pointer;
+}
+
+.ctf-categories button {
+  padding: 10px 20px;
+}
+
+
+  // FOOTER
 
 #footer {
   background: rgba(0,0,0,0.6);

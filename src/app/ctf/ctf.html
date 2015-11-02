@@ -1,1 +1,94 @@
-<h1>CTF Challenges</h1>
+<div class="container ctf-page">
+
+    <div class="row">
+
+        <div class="col-lg-12 text-center">
+            <h1>Capture the Flag Challenges</h1>
+
+            <img width="250px" src="/assets/images/ctf-challenge-5.jpg" alt=""/>
+            
+            <h3>Categories</h3>
+            <ul class="ctf-categories">
+                <li ng-repeat="category in ctf.categories">
+                    <button class="btn btn-warning category-btn" ng-click="ctf.selectCategory(category)">{{ category }}</button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="row ctf-flags">
+
+        <div class="col-lg-12 text-center">
+
+            <!-- Decryption -->
+            <div ng-if="ctf.selectedCategory === 'Decryption'">
+
+                <h1>{{ ctf.selectedCategory }}</h1>
+
+                <div class="row flag-box">
+                    <div class="col-lg-8">
+                        <h1>Flag 1: Rot13</h1>
+
+                        <p class="flag-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                            blanditiis, consectetur debitis dignissimos distinctio earum in ipsa laboriosam magnam
+                            minima minus mollitia nam, nostrum officia optio repellat voluptas! Aliquam,
+                            perspiciatis? </p>
+
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="flagInput" class="sr-only">Input Flag</label>
+                                <input class="form-control" id="flagInput" placeholder="Enter your flag here!"
+                                       type="text"/>
+
+                                <button class="btn btn-success">Submit Flag</button>
+
+                                <span> 0 / 5 Attempts</span>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="col-lg-4 stats">
+                        <h2>Stats</h2>
+
+                        <p class="solved">Not Solved</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Decryption -->
+
+            <!-- Web Applications -->
+            <div ng-if="ctf.selectedCategory === 'Web Applications'">
+
+                <h1>{{ ctf.selectedCategory }}</h1>
+
+            </div>
+
+            <!-- Penetration Testing -->
+            <div ng-if="ctf.selectedCategory === 'Penetration Testing'">
+
+                <h1>{{ ctf.selectedCategory }}</h1>
+
+            </div>
+
+            <!-- Password Hashing -->
+            <div ng-if="ctf.selectedCategory === 'Password Hashing'">
+
+                <h1>{{ ctf.selectedCategory }}</h1>
+
+            </div>
+
+            <!-- Packet Analysis -->
+            <div ng-if="ctf.selectedCategory === 'Packet Analysis'">
+
+                <h1>{{ ctf.selectedCategory }}</h1>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
